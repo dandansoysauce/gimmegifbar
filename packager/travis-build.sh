@@ -16,5 +16,4 @@ npm --version
 
 npm install
 npm test
-npm run dist-mac
-npm run dist-linux
+npm run release
