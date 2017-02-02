@@ -7,13 +7,12 @@ Search gifs right on your menubar. Powered by [Giphy](https://giphy.com/).
 ## Download
 
 Check the **[releases](https://github.com/dandansoysauce/gimmegifbar/releases)** for the latest version.
+(Releases are on the way.)
 
 ##### Available for:
 
 - Windows
 - Ubuntu/Debian
-- Arch
-- Red Hat
 - macOS
 
 For **macOS**, download the _gimmegifbar_mac.zip_ and drag to your apps folder.
