@@ -37,7 +37,6 @@
   "devDependencies": {
     "electron": "^1.4.1",
     "electron-builder": "^12.2.2",
-    "electron-download": "^3.2.0",
     "xo": "^0.17.1"
   },
   "scripts": {
