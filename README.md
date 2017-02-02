@@ -15,7 +15,7 @@ Check the **[releases](https://github.com/dandansoysauce/gimmegifbar/releases)**
 - Ubuntu/Debian
 - macOS
 
-For **macOS**, download the _gimmegifbar_mac.zip_ and drag to your apps folder.
+For **macOS**, download the _gimmegifbar_mac.zip_ and drag it to your apps folder.
 
 Install [Homebrew Cask](http://caskroom.io/)
 
