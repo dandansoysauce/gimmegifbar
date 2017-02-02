@@ -28,10 +28,7 @@
     "win": {},
     "linux": {
       "category": "Utility",
-      "target": [
-        "deb",
-        "snap"
-      ]
+      "target": "deb"
     }
   },
   "main": "main.js",
