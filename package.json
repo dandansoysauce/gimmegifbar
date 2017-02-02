@@ -20,7 +20,10 @@
     "category": "public.app-category.utility",
     "mac": {
       "category": "public.app-category.utilities",
-      "target": "zip",
+      "target": [
+        "zip",
+        "dmg"
+      ],
       "publish": "github"
     },
     "nsis": {
