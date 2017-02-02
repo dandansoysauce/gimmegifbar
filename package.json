@@ -1,0 +1,67 @@
+{
+  "name": "gimmegifbar",
+  "productName": "GimmeGifbar",
+  "version": "1.0.0",
+  "description": "A Giphy searcher on you menubar.",
+  "license": "MIT",
+  "author": {
+    "name": "Dani Antonio Ona",
+    "email": "ona.dani.a@gmail.com",
+    "url": "https://dandansoysauce.github.io"
+  },
+  "keywords": [
+    "giphy",
+    "search",
+    "menubar",
+    "electron"
+  ],
+  "build": {
+    "appId": "com.dandansoy.gimmegifbar",
+    "category": "public.app-category.utility",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "mas"
+    },
+    "win": {},
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "deb",
+        "rpm",
+        "pacman"
+      ]
+    }
+  },
+  "main": "main.js",
+  "dependencies": {
+    "electron-is-dev": "^0.1.2",
+    "giphy-api": "^1.2.3",
+    "menubar": "^5.1.0"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-builder": "^12.2.2",
+    "xo": "^0.17.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist-multi": "build -wml --ia32 --x64",
+    "test": "xo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandansoysauce/gimmegifbar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dandansoysauce/gimmegifbar/issues"
+  },
+  "xo": {
+    "esnext": true,
+    "semicolon": false,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
