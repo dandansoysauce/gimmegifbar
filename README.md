@@ -1,4 +1,4 @@
-# Gimme Gifbar [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+# GimmeGifbar [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 Search gifs right on your menubar. Powered by [Giphy](https://giphy.com/).
 
