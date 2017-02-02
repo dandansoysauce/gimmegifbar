@@ -49,7 +49,7 @@
     "dist-mac": "build --mac --ia32 --x64",
     "dist-linux": "build --linux --ia32 --x64",
     "dist-multi": "build -wml --ia32 --x64",
-    "release": "build",
+    "release": "yarn compile && build",
     "test": "xo"
   },
   "repository": {
