@@ -20,7 +20,8 @@
     "category": "public.app-category.utility",
     "mac": {
       "category": "public.app-category.utilities",
-      "target": "zip"
+      "target": "zip",
+      "publish": "github"
     },
     "nsis": {
       "perMachine": true,
@@ -29,7 +30,8 @@
     },
     "linux": {
       "category": "Utility",
-      "target": "deb"
+      "target": "deb",
+      "publish": "github"
     }
   },
   "main": "main.js",
