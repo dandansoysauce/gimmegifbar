@@ -14,8 +14,6 @@ init:
 install:
   - ps: Install-Product node 7 x64
   - npm install
-  - npm install -g electron-download
-  - electron-download --version=1.4.5 --arch=ia32 --platform=win32
 
 build_script:
   - npm run dist-win
