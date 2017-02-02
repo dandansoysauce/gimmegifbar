@@ -53,7 +53,6 @@
     "dist-linux": "build --linux --ia32 --x64",
     "dist-multi": "build -wml --ia32 --x64",
     "release": "build --ia32 --x64",
-    "publish": "--publish -p \"onTagOrDraft\"",
     "test": "xo"
   },
   "repository": {
