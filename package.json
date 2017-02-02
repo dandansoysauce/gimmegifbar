@@ -46,6 +46,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "build --dir",
+    "dist-win": "build --win --ia32 --x64",
     "dist-multi": "build -wml --ia32 --x64",
     "test": "xo"
   },
