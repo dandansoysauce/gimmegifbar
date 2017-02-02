@@ -35,8 +35,7 @@ install:
 - yarn add electron-builder@next --dev # force install next version to test electron-builder
 
 script:
-- npm run dist-linux
-- npm run dist-mac
+- npm run release
 
 branches:
   except:
