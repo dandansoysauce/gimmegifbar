@@ -33,6 +33,13 @@ ipc.on('abort', () => {
 	mb.hideWindow()
 })
 
+ipc.on('open-external', (e, url) => {
+	mb.window.webContents.on('new-window', () => {
+		e.preventDefault()
+		electron.shell.openExternal(url)
+	})
+})
+
 const template = [{
 	label: 'GiphyBar',
 	submenu: [{label: 'Undo', accelerator: 'CmdOrCtrl+Z', selector: 'undo:'},

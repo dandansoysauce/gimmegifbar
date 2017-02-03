@@ -1,4 +1,6 @@
-# GimmeGifbar [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+# GimmeGifbar [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Build Status](https://travis-ci.org/dandansoysauce/gimmegifbar.svg?branch=master)](https://travis-ci.org/dandansoysauce/gimmegifbar) [![Build status](https://ci.appveyor.com/api/projects/status/c5ei0j5w1vhy2vfv/branch/master?svg=true)](https://ci.appveyor.com/project/dandansoysauce/gimmegifbar/branch/master)
+
+
 
 Search gifs right on your menubar. Powered by [Giphy](https://giphy.com/).
 
@@ -7,7 +9,6 @@ Search gifs right on your menubar. Powered by [Giphy](https://giphy.com/).
 ## Download
 
 Check the **[releases](https://github.com/dandansoysauce/gimmegifbar/releases)** for the latest version.
-(Releases are on the way.)
 
 ##### Available for:
 
@@ -15,7 +16,7 @@ Check the **[releases](https://github.com/dandansoysauce/gimmegifbar/releases)**
 - Ubuntu/Debian
 - macOS
 
-For **macOS**, download the _gimmegifbar_mac.zip_ and drag it to your apps folder.
+For **macOS zips**, download the _gimmegifbar_mac.zip_ and drag it to your apps folder.
 
 Install [Homebrew Cask](http://caskroom.io/)
 
