@@ -14,7 +14,7 @@ const mb = menubar({
 	height: 670,
 	icon: path.join(__dirname, 'app/IconTemplate.png'),
 	preloadWindow: true,
-	windowPosition: 'trayRight'
+	windowPosition: 'trayBottomRight'
 })
 
 mb.on('show', () => {

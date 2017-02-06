@@ -88,6 +88,7 @@ function renderResults(gifsArray, containerElement) {
 		const fbLink = `http://www.facebook.com/sharer/sharer.php?u=${gifBitly}`
 		const rdLink = `http://www.reddit.com/submit?url=${gifStandardLink}`
 		const twLink = `http://twitter.com/share?url=${gifBitly}?tc=1`
+		const trLink = `http://www.tumblr.com/widgets/share/tool?canonicalUrl=${gifStandardLink}&content=${gifMediaLink}`
 
 		// Render per image
 		resultElement.className = 'giphy'
@@ -106,16 +107,27 @@ function renderResults(gifsArray, containerElement) {
 		resultElement.addEventListener('mouseenter', () => {
 			if (sharerDiv) {
 				sharerDiv.style.transform = 'translateY(0)'
-				sharerDiv.style.visibility = 'visible'
+			}
+		})
+		resultElement.addEventListener('mouseleave', evt => {
+			if (sharerDiv) {
+				if (evt.toElement) {
+					if (evt.toElement.className === 'sharer') {
+						return
+					}
+				}
+
+				sharerDiv.style.transform = 'translateY(35px)'
 			}
 		})
 
 		// Render sharer div
 		sharerDiv.className = 'sharer'
-		sharerDiv.addEventListener('mouseleave', () => {
-			if (sharerDiv) {
-				sharerDiv.style.transform = 'translateY(35px)'
-				sharerDiv.style.visibility = 'collapse'
+		sharerDiv.addEventListener('mouseleave', evt => {
+			if (evt.toElement) {
+				if (evt.toElement.className === 'giphy') {
+					sharerDiv.style.transform = 'translateY(35px)'
+				}
 			}
 		})
 		const fb = document.createElement('button')
@@ -128,11 +140,19 @@ function renderResults(gifsArray, containerElement) {
 		})
 
 		rd.className = 'reddit'
+		rd.addEventListener('click', () => {
+			electron.shell.openExternal(rdLink)
+		})
 
 		tr.className = 'tumblr'
+		tr.addEventListener('click', () => {
+			electron.shell.openExternal(trLink)
+		})
 
 		tw.className = 'twitter'
-		tw.href = `http://twitter.com/share?url=${gifBitly}?tc=1`
+		tw.addEventListener('click', () => {
+			electron.shell.openExternal(twLink)
+		})
 
 		// Render container for sharer and img
 		divContainer.className = 'image-gif'

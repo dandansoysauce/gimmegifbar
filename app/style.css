@@ -117,7 +117,7 @@ button {
   left: 0;
   line-height: 25px;
   overflow: hidden;
-  padding: 1px 5px 0;
+  padding: 3px 5px 0;
   position: absolute;
   width: 100%;
   -webkit-transform: translateY(35px);
@@ -125,7 +125,6 @@ button {
   transition: -webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1),-webkit-transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  visibility: collapse;
 }
 
 .facebook {
@@ -134,6 +133,7 @@ button {
   width: 32px;
   height: 32px;
   border: none;
+  cursor: pointer;
 }
 
 .reddit {
@@ -142,6 +142,7 @@ button {
   width: 32px;
   height: 32px;
   border: none;
+  cursor: pointer;
 }
 
 .tumblr {
@@ -150,6 +151,7 @@ button {
   width: 32px;
   height: 32px;
   border: none;
+  cursor: pointer;
 }
 
 .twitter {
@@ -158,4 +160,5 @@ button {
   width: 32px;
   height: 32px;
   border: none;
+  cursor: pointer;
 }
