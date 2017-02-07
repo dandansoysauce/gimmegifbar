@@ -30,11 +30,11 @@ window.addEventListener('scroll', () => {
 	}
 })
 
-// document.addEventListener('click', evt => {
-// 	if (evt.target.classList.contains('giphy')) {
-// 		copyGif(evt.target, evt.shiftKey)
-// 	}
-// })
+document.addEventListener('click', evt => {
+	if (evt.target.classList.contains('giphy')) {
+		copyGif(evt.target, evt.shiftKey)
+	}
+})
 
 document.addEventListener('keydown', evt => {
 	if (evt.keyCode === 27) {
@@ -53,7 +53,7 @@ function copyGif(gif) {
 	searchInput.value = ''
 	search('', 0)
 	off = 0
-	// ipc.send('abort')
+	ipc.send('abort')
 }
 
 function search(query, off) {
